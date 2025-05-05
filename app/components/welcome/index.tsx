@@ -88,7 +88,7 @@ const Welcome: FC<IWelcomeProps> = ({
         <div className='text-gray-900'>{conversationName}</div>
       </div>
     )
- }
+  }
 
   const renderInputs = () => {
     return (
