@@ -652,7 +652,7 @@ const Main: FC<IMainProps> = () => {
       <div className="flex rounded-t-2xl bg-transparent overflow-hidden">
         {/* sidebar */}
         {/*!isMobile && renderSidebar()*/}
-        {/*isMobile && isShowSidebar && (
+        {isMobile && isShowSidebar && (
           <div className='fixed inset-0 z-50'
             style={{ backgroundColor: 'rgba(35, 56, 118, 0.2)' }}
             onClick={hideSidebar}
@@ -660,7 +660,7 @@ const Main: FC<IMainProps> = () => {
             <div className='inline-block' onClick={e => e.stopPropagation()}>
               {renderSidebar()}
             </div>
-          </div*/>
+          </div>
         )}
         {/* main */}
         <div className='flex-grow flex flex-col overflow-hidden'>
