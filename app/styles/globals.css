@@ -82,9 +82,9 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #e6f9ec; /* 淡绿色背景 */
-  background-image: url('/Persona1.png');
+  background-image: url('/women.png');
   background-repeat: no-repeat;
-  background-position: bottom lft;
+  background-position: bottom left;
   background-size: 500px;
   /* background: linear-gradient(
       to bottom,
