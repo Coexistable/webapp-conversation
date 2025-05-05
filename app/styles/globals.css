@@ -91,7 +91,7 @@ body {
   background-image: url('/women.png');
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: contain; /* 或 cover，防止固定宽度撑出滚动 */
+  background-size: 400px auto; 
   background-attachment: fixed;
   /* background: linear-gradient(
       to bottom,
