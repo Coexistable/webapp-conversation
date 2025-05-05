@@ -34,9 +34,9 @@ const Question: FC<IQuestionProps> = ({ id, content, useCurrentUserAvatar, imgSr
           </div>
         )
         : (
-          <div className={`${s.questionIcon} w-10 h-10 shrink-0 `}></div>
+          <div className={`${s.questionIcon} w-10 h-10 shrink-0 `}></div> */}
         )}
-    </div> */}
+    </div>
   )
 }
 
