@@ -11,14 +11,13 @@ const LocaleLayout = ({
   const locale = getLocaleOnServer()
   return (
     <html lang={locale ?? 'en'} className="h-full">
-      <body className="h-full">
+      <body className="h-full overflow-x-hidden">
         <div className="w-full min-h-screen">
           {children}
-         </div>
-       </div>
-    </body>
-  </html>
- )
+        </div>
+      </body>
+    </html>
+  )
 }
 
 export default LocaleLayout
