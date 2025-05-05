@@ -651,8 +651,8 @@ const Main: FC<IMainProps> = () => {
       />
       <div className="flex rounded-t-2xl bg-transparent overflow-hidden">
         {/* sidebar */}
-        {!isMobile && renderSidebar()}
-        {isMobile && isShowSidebar && (
+        {/*!isMobile && renderSidebar()*/}
+        {/*isMobile && isShowSidebar && (
           <div className='fixed inset-0 z-50'
             style={{ backgroundColor: 'rgba(35, 56, 118, 0.2)' }}
             onClick={hideSidebar}
@@ -660,10 +660,10 @@ const Main: FC<IMainProps> = () => {
             <div className='inline-block' onClick={e => e.stopPropagation()}>
               {renderSidebar()}
             </div>
-          </div>
+          </div*/>
         )}
         {/* main */}
-        <div className='flex-grow flex flex-col h-[calc(100vh_-_3rem)] overflow-y-auto'>
+        <div className='flex-grow flex flex-col overflow-hidden'>
           <ConfigSence
             conversationName={conversationName}
             hasSetInputs={hasSetInputs}
@@ -678,7 +678,7 @@ const Main: FC<IMainProps> = () => {
 
           {
             hasSetInputs && (
-              <div className='relative grow h-[200px] pc:w-[794px] max-w-full mobile:w-full pb-[66px] mx-auto mb-3.5 overflow-hidden'>
+              <div className='relative grow pc:w-[794px] max-w-full mobile:w-full pb-[66px] mx-auto mb-3.5 overflow-hidden'>
                 <div className='h-full overflow-y-auto' ref={chatListDomRef}>
                   <Chat
                     chatList={chatList}
