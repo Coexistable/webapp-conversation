@@ -81,6 +81,11 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: #e6f9ec; /* 淡绿色背景 */
+  background-image: url('/my-avatar.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 300px;
   /* background: linear-gradient(
       to bottom,
       transparent,
