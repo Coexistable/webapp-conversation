@@ -169,10 +169,6 @@ const Main: FC<IMainProps> = () => {
     hideSidebar()
   }
 
-  useEffect(() => {
-    handleConversationIdChange('-1')
-  }, [])
-
   /*
   * chat info. chat is under conversation.
   */
