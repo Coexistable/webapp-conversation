@@ -4,13 +4,13 @@ export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
 export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
 export const APP_INFO: AppInfo = {
   title: 'Chat bot',
-  description: 'dify chatbot',
+  description: '',
   copyright: 'Dify',
   privacy_policy: '',
-  default_language: 'en',
+  default_language: 'jp',
 }
 
-export const isShowPrompt = true
+export const isShowPrompt = false
 export const promptTemplate = ''
 
 export const API_PREFIX = '/api'
