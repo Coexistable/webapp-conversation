@@ -7,7 +7,7 @@ export const APP_INFO: AppInfo = {
   description: '',
   copyright: 'Dify',
   privacy_policy: '',
-  default_language: 'jp',
+  default_language: 'ja',
 }
 
 export const isShowPrompt = false
