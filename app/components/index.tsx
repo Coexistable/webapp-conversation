@@ -663,7 +663,7 @@ const Main: FC<IMainProps> = () => {
           </div>
         )}
         {/* main */}
-        <div className='flex-grow flex flex-col overflow-hidden'>
+        <div className='flex flex-col h-full overflow-hidden'>
           <ConfigSence
             conversationName={conversationName}
             hasSetInputs={hasSetInputs}
@@ -679,7 +679,7 @@ const Main: FC<IMainProps> = () => {
           {
             hasSetInputs && (
               <div className='relative grow pc:w-[794px] max-w-full mobile:w-full pb-[66px] mx-auto mb-3.5 overflow-hidden'>
-                <div className='h-full overflow-visible' ref={chatListDomRef}>
+                <div className='flex-1 overflow-y-auto px-4 pb-4' ref={chatListDomRef}>
                   <Chat
                     chatList={chatList}
                     onSend={handleSend}
